@@ -1,0 +1,31 @@
+extends ./default.pug
+
+block header
+ include ./partials/header-profile.pug
+ 
+block main
+ include ./partials/top-dashboard.pug
+ section
+  .r
+   .c30
+    include ./partials/profile-left-menu.pug
+  
+   .c7
+    h1 Invite friends
+
+    p Explain why user has to fill this.
+
+    form(action="")
+     fieldset
+      legend Send invite to your friend
+
+      label(for="friendname") Friend's name
+      input#friendname(type="text", name="friendname")
+      
+      label(for="friendemail") Friend's e-mail
+      input#friendemail(type="text", name="friendemail")
+      
+      label(for="friendmessage") Invite message
+      textarea#friendmessage(name="friendmessage", cols="30", rows="10")
+      
+    a(href="#", title="Send invite").button Send invite

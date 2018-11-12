@@ -1,0 +1,103 @@
+extends ./default.pug
+
+block header
+ include ./partials/header-profile.pug
+ 
+block main
+ include ./partials/top-dashboard.pug
+ section
+  .r
+   .c30
+    include ./partials/profile-left-menu.pug
+  
+   .c7
+    h1 Your profile
+
+    p Explain why user has to fill this.
+
+    form(action="")
+     fieldset
+      legend Your gender
+      
+      input#vyras(type="radio", name="lytis" value="vyras" checked)
+      label(for="vyras") Male
+        
+      input#moteris(type="radio", name="lytis" value="moteris")
+      label(for="moteris") Female
+
+     fieldset
+      legend Mother tongue
+      
+      input#lietuviu(type="radio", name="kalba" value="lietuvių" checked)
+      label(for="lietuviu") Lithuanina
+        
+      input#rusu(type="radio", name="kalba" value="rusų" checked)
+      label(for="rusu") Russian
+
+      input#kita(type="radio", name="kalba" value="kita" checked)
+      label(for="kita") English
+
+    fieldset#apskritis
+      legend District
+
+      input#alytaus(type="radio", name="apskritis" value="Alytaus" checked)
+      label(for="alytaus") Alytaus apskritis
+      br
+      input#kauno(type="radio", name="apskritis" value="Kauno")
+      label(for="kauno") Kauno apskritis
+      br
+      input#klaipedos(type="radio", name="apskritis" value="Klaipėdos")
+      label(for="klaipedos") Klaipėdos apskritis
+      br
+      input#marijampoles(type="radio", name="apskritis" value="Marijampolės")
+      label(for="marijampoles") Marijampolės apskritis
+      br
+      input#panevezio(type="radio", name="apskritis" value="Panevėžio")
+      label(for="panevezio") Panevėžio apskritis
+      br
+      input#siauliu(type="radio", name="apskritis" value="Šiaulių")
+      label(for="siauliu") Šiaulių apskritis
+      br
+      input#taurages(type="radio", name="apskritis" value="Tauragės")
+      label(for="taurages") Tauragės apskritis
+      br
+      input#telsiu(type="radio", name="apskritis" value="Telšių")
+      label(for="telsiu") Telšių apskritis
+      br
+      input#utenos(type="radio", name="apskritis" value="Utenos")
+      label(for="utenos") Utenos apskritis
+      br
+      input#vilniaus(type="radio", name="apskritis" value="Vilniaus")
+      label(for="vilniaus") Vilniaus apskritis
+
+    fieldset
+      legend Date of birth
+
+      select
+        -var n = 1940;
+        while n < 2006
+            option(value=n) #{n++}
+
+      select
+        //- ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"] 
+        //- ["Sausis", "Vasaris", "Kovas", "Balandis", "Gegužė", "Birželis", "Liepa", "Rugpjūtis", "Rugsėjis", "Lapkritis", "Gruodis"]
+        each i, variable in ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"] 
+            option(value=variable) #{i}
+      select
+        -var n = 1;
+        while n < 32
+            option(value=n) #{n++}
+    
+    fieldset
+      legend Address
+
+      label(for="gatve") Street
+      input#gatve(type="text", name="gatve")
+      
+      label(for="namo-nr") Building number
+      input#namo-nr(type="text", name="namo-nr")
+      
+      label(for="miestas") City
+      input#miestas(type="text", name="miestas")
+      
+    a(href="#", title="Išsaugoti pakeitimus").button Save

@@ -1,0 +1,16 @@
+extends ./default.pug
+
+block main
+ section
+  .r
+   .c0
+    article
+     each page in collections.test
+      .r
+       .c5
+        //- img.img(src=page.img, alt=page.title) Klase img kad scalinti image
+        img(src=page.img, alt=page.title)
+       .c5
+        h1 #{page.title}
+        p!= page.contents 
+        //- a(href=siteurl + page.path, title=page.title) Skaityti daugiau 

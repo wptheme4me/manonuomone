@@ -1,0 +1,105 @@
+#logo {
+    background: rgb(209, 209, 209);
+}
+
+#klausimai {
+    display: block;
+    position: relative;
+    // border: 1px solid green;
+    // background: rgb(241, 241, 241);
+
+    h1 {
+        display: block;
+        box-sizing: border-box;
+        position: relative;
+        // border: 1px solid red;
+        // background: rgb(219, 219, 219);
+        width: 29%;
+        float: left;
+
+        &:after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+    }
+
+    dl {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 0 10px 0;
+        margin: 0 0 50px 0; //default 16
+        // border-bottom: 1px solid red;
+        // background: rgb(219, 219, 219);
+        width: 70%;
+        float: left;
+    }
+
+    dt {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    dd {
+        margin-bottom: 40px;
+    }
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	height: 22px;
+	width: 200px;
+	margin: 20px 20px 0 0;
+	padding: 20px;
+	border-radius: 30px;
+	border: 1px solid gray;
+	text-align: center;
+}
+
+#taskai {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
+    padding-top: 73px;
+    padding-left: 6px;
+    font-size: 4em;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 50%;
+
+    span {
+        font-size: 0.25em;
+    }
+}
+
+#apklausa {
+
+    .r {
+        width: 100%;
+    }
+
+    article {
+        border-bottom: 1px solid grey;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+#apklausa section article:last-child {
+    border-bottom: none;
+}
+
+.points {
+    font-size: 1.8em;
+}
+
+.inactive {
+    opacity: 0.5;
+}
