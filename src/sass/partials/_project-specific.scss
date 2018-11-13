@@ -1,19 +1,18 @@
+// Logo
 #logo {
     background: rgb(209, 209, 209);
 }
 
-#klausimai {
+// Support questions-answers page 
+#questions {
     display: block;
     position: relative;
-    // border: 1px solid green;
-    // background: rgb(241, 241, 241);
 
+    //Divide page into two columns
     h1 {
         display: block;
         box-sizing: border-box;
         position: relative;
-        // border: 1px solid red;
-        // background: rgb(219, 219, 219);
         width: 29%;
         float: left;
 
@@ -24,14 +23,13 @@
         }
     }
 
+    //Questions and answers are presented in DL
     dl {
         display: block;
         position: relative;
         box-sizing: border-box;
         padding: 0 0 10px 0;
         margin: 0 0 50px 0; //default 16
-        // border-bottom: 1px solid red;
-        // background: rgb(219, 219, 219);
         width: 70%;
         float: left;
     }
@@ -46,19 +44,27 @@
     }
 }
 
-.button {
-	display: inline-block;
-	position: relative;
-	height: 22px;
-	width: 200px;
-	margin: 20px 20px 0 0;
-	padding: 20px;
-	border-radius: 30px;
-	border: 1px solid gray;
-	text-align: center;
+// Surveys and quick surveys
+#survey {
+
+    .r {
+        width: 100%;
+    }
+
+    article {
+        border-bottom: 1px solid grey;
+    }
+
+    img {
+        border-radius: 50%;
+    }
 }
 
-#taskai {
+#survey section article:last-child {
+    border-bottom: none;
+}
+
+.results {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -77,29 +83,51 @@
     }
 }
 
-#apklausa {
-
-    .r {
-        width: 100%;
-    }
-
-    article {
-        border-bottom: 1px solid grey;
-    }
-
-    img {
-        border-radius: 50%;
-    }
-}
-
-#apklausa section article:last-child {
-    border-bottom: none;
-}
-
 .points {
+    display: block;
     font-size: 1.8em;
 }
 
 .inactive {
     opacity: 0.5;
+}
+
+// Profile page navigation
+#profile-nav {
+    background: gray;
+}
+
+#surveys, #quick-surveys, #lottery, #friends, #profile {
+    &::before{
+        content: " ";
+        background: url(../../img/calendar-check-regular.svg) center no-repeat;
+        display: inline-block;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+}
+// #quick-surveys {}
+// #lottery {}
+// #friends {}
+// #profile {}
+
+// Used in all pages
+.button {
+	display: inline-block;
+	position: relative;
+	height: 22px;
+	width: 200px;
+	margin: 20px 20px 0 0;
+	padding: 20px;
+	border-radius: 30px;
+	border: 1px solid gray;
+    text-align: center;
+    
+    &:hover {
+        color: white;
+        background: gray;
+    }
 }

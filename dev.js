@@ -22,12 +22,13 @@ metalsmith(__dirname)
     siteurl: config.dev_siteurl,
     style_sheet: config.style_sheet,
     googleanalytics: config.google_analytics_key,
+    facebook_appid: config.facebook_appid
   })
   .source('src')
   .destination('build')
   .clean(true)
   .use(markdown())
-  .use(clear_collections(["test"])) //metalsmith-collection dublication bug workaround
+  .use(clear_collections(["test", "profile"])) //metalsmith-collection dublication bug workaround
   .use(collections({  // Used for navigation purposes
     // default: {
     //   pattern: '**/*.html',
@@ -39,7 +40,10 @@ metalsmith(__dirname)
       pattern: 'test/**/*.html',
       refer: false, // skip adding the "next" and "previous" links to your articles
       sortBy: 'eile',
-      // reverse: true
+    },
+    profile: {
+      refer: false, // skip adding the "next" and "previous" links to your articles
+      sortBy: 'eile',
     }
   }))
   // .use(ignore([]))
@@ -55,7 +59,7 @@ metalsmith(__dirname)
   }))
   .use(sass({ // Options https://github.com/sass/node-sass
     outputDir: 'css',
-    outputStyle: 'expanded', //Values: nested, expanded, compact, compressed
+    outputStyle: 'compressed', //Values: nested, expanded, compact, compressed
     includePaths: ['sass', 'sass/partials']
   }))
   .use(autoprefixer())

@@ -73,6 +73,7 @@ p {
 
 a {
     line-height: inherit;
+    font-weight: 700;
     color: $a-color;
     text-decoration: $a-text-decoration;
     cursor: pointer; 
@@ -85,10 +86,13 @@ a {
 }
 
 ul {
-  margin-left: 0px;
+  margin: 0;
+  padding: 0;
 
   li {
     margin: 10px 0;
     // cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
   }
 }

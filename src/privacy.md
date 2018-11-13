@@ -13,6 +13,8 @@ Kaip dalis mūsų nuolatinio įsipareigojimo skaidrumui, atskaitomybei ir atsaki
 
 Asmens duomenų apsauga yra pagrindinis ManoNuomone.lt, kaip rinkos tyrimų sektoriaus ir informacijos apie žmones tvarkančių subjektų dalies, prioritetas. ManoNuomone.lt laikosi registruotų rinkos tyrimų bendrovių (ICC / ESOMAR) profesinio elgesio kodekso nurodymų ir reikalavimų bei visų galiojančių vietos teisės aktų reikalavimų, ypač susijusių su Narių asmens duomenų apsauga. ManoNuomone.lt ėmėsi iniciatyvos, siekdama užtikrinti savo klientų, Narių ir darbuotojų asmens duomenų apsaugą ir saugą. Įsigaliojus GDPR, ManoNuomone.lt įgyvendino GDPR reikalavimus visose Europos šalyse, kuriose ji veikia.
 
+Narys gali susipažinti ir atnaujinti ManoNuomone.lt surinktą asmeninę informaciją. Tai galite padaryti prisijungus prie savo paskyros. Be to, galite bet kada susisiekti su ManoNuomone.lt Narių aptarnavimo specialistais ir paprašyti bet kokios saugomos informacijos apie Jus. Galite paprašyti ištrinti savo informaciją (nusišalinti) atsisakydami jos rinkimo, kaip aprašyta toliau.
+
 ManoNuomone.lt renka ir kaupia tik:
 
 a.	būtiną informaciją apie Narius registracijos metu (el. pašto adresas, slaptažodis, vartotojo vardas, gimimo metai, lytis, adresas) ir, priklausomai nuo aplinkybių,
@@ -40,10 +42,6 @@ IP adresas. Prisijungiant prie mūsų internetinės svetainės ManoNuomone.lt se
 Mes galime naudoti naršyklės slapukus tiek, kiek tai reikalinga apklausoms ir kokybės užtikrinimo tikslais. Neįrašysime viso įrenginio IP adreso, tačiau mes jį naudosime, kad nustatytume apytikslę geografinę vietovę ir įsitikintume, jog atsakymai į apklausos klausimus gaunami iš norimų rinkų.
 
 Jei nenorite, kad mes naudotume slapukus, Jūs juos galite paprasčiausiai užblokuoti arba gauti informaciją apie jų naudojimą atitinkamai pakeisdami savo naršyklės nustatymus. Jei nesutinkate su slapukų naudojimu, priklausomai nuo aplinkybių, kai kurios mūsų internetinės svetainės dalys Jums gali būti neprieinamos.
-
-## DUOMENŲ APSAUGA
-
-Narys gali susipažinti ir atnaujinti ManoNuomone.lt surinktą asmeninę informaciją. Tai galite padaryti prisijungus prie savo paskyros. Be to, galite bet kada susisiekti su ManoNuomone.lt Narių aptarnavimo specialistais ir paprašyti bet kokios saugomos informacijos apie Jus. Galite paprašyti ištrinti savo informaciją (nusišalinti) atsisakydami jos rinkimo, kaip aprašyta toliau.
 
 ## ELEKTRONINIŲ LAIŠKŲ SIUNTIMO DAŽNUMAS
 

@@ -1,9 +1,8 @@
 ---
-title: 'Antra skiltis'
+title: 'Second message: how to earn'
 layout: home.pug
-img: 'https://via.placeholder.com/350x350.png?text=Illustration+to+accompany+text'
+img: 'https://via.placeholder.com/350x350.png?text=Illustration'
 collection: test
 eile: 2
 ---
-
-Egzistuoja ne mažai įvairių Lorem Ipsum versijų. Kai kurios iš jų buvo sukurtos per klaidą, kitos - tyčia (pvz. jumoristinės).
+How to earn text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

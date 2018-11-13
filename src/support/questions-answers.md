@@ -1,6 +1,6 @@
 ---
 title: 'Questions and answers'
-layout: klausimai.pug
+layout: questions-answers.pug
 ---
 
 # How it works

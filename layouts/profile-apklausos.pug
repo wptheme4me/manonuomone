@@ -5,24 +5,24 @@ block header
 
 block main
  include ./partials/top-dashboard.pug
- section
-  .r
-   .c25
-    include ./partials/profile-left-menu.pug
+ .r
+  .c25
+   include ./partials/profile-left-menu.pug
   
-   #apklausa.c7
+  #survey.c7
+   section
     span Number in brackers indicates how many surveys are available for the user
     h1 Surveys (6)
-    section
-     -var i=1;
-     while i < 7
-      article
-       .r
-        .c30
-         img(src="https://via.placeholder.com/150x150", alt="Image")
-        .c6
-         h2 Survey name #{i++}
-         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-         a(href="#", title="title").button Take survey
-        .c1
-         p Points for this survey 145
+    -var i=1;
+    while i < 7
+     article
+      .r
+       .c30
+        img(src="https://via.placeholder.com/150x150", alt="Image")
+       .c5
+        h2 Survey name #{i++}
+        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        a(href="#", title="title").button Take survey
+       .c2.text-right 
+        span.points 14#{i++}
+        p points for this survey

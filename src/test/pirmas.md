@@ -1,9 +1,11 @@
 ---
-title: 'Pirma skiltis'
+title: 'Main message to site visitor: become survey participant'
 layout: home.pug
-img: 'https://via.placeholder.com/350x350.png?text=Illustration+to+accompany+text'
+img: 'https://via.placeholder.com/350x350.png?text=Illustration'
 collection: test
 eile: 1
 ---
+Become survey participant Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
-Klasikinį Lorem Ipsum teksto pavyzdį, naudojamą nuo XVI a., galima pamatyti svetainės apačioje. Taip pat pateikiamos 1.10.32 ir 1.10.33 pastraipos is Cicerono knygos „de Finibus Bonorum et Malorum“, ir jų vertimai į anglų kalbą H.Rackham 1914m.
+Action: what visitor has to do???
+<a href="#" class="button">Be our member</a>

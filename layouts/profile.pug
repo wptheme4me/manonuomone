@@ -15,7 +15,7 @@ block main
 
     p Explain why user has to fill this.
 
-    form(action="")
+    form(action="#")
      fieldset
       legend Your gender
       
@@ -73,17 +73,21 @@ block main
     fieldset
       legend Date of birth
 
-      select
+      label(for="gim-year") Year
+      select#gim-year
         -var n = 1940;
         while n < 2006
             option(value=n) #{n++}
 
-      select
+      label(for="gim-month") Month
+      select#gim-month
         //- ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"] 
         //- ["Sausis", "Vasaris", "Kovas", "Balandis", "Gegužė", "Birželis", "Liepa", "Rugpjūtis", "Rugsėjis", "Lapkritis", "Gruodis"]
         each i, variable in ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"] 
             option(value=variable) #{i}
-      select
+
+      label(for="gim-day") Day
+      select#gim-day
         -var n = 1;
         while n < 32
             option(value=n) #{n++}

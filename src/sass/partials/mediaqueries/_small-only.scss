@@ -26,4 +26,47 @@
 
    @include fonts($headers-small);
 
+   #forma {
+       width: 100%;
+   }
+
+   select {
+       width: 100%;
+   }
+
+   // Support questions-answers page 
+#questions {
+    display: block;
+    position: relative;
+
+    //Divide page into two columns
+    h1 {
+        display: block;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+
+    //Questions and answers are presented in DL
+    dl {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 0 0px 0;
+        margin: 0 0 0px 0; //default 16
+        width: 100%;
+        float: none;
+    }
+
+    dt {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    dd {
+        margin: 0 0 40px 0;
+    }
+}
+
 }
