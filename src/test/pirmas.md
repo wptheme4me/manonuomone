@@ -8,4 +8,4 @@ eile: 1
 Become survey participant text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
 Action: what visitor has to do???
-<a href="sign-up.html" class="button">Be our member</a>
+<a href="sign-up.html" class="button">Become our member</a>

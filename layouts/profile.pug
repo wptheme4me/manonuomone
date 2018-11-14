@@ -15,6 +15,16 @@ block main
 
     p Explain why user has to fill this.
 
+    ul#profile-sections
+     li About you 0/5 <span class="getpoints">+5 points</span> 
+     li Household 0/7 <span class="getpoints">+5 points</span> 
+     li Health 0/7 <span class="getpoints">+5 points</span> 
+     li Job 0/7 <span class="getpoints">+5 points</span> 
+     li Leisure 0/7 <span class="getpoints">+5 points</span> 
+     li Vehicle 0/7 <span class="getpoints">+5 points</span> 
+     li Technologies 0/7 <span class="getpoints">+5 points</span> 
+    p Fill all information and get points for that.
+
     form(action="#")
      fieldset
       legend Your gender
@@ -107,4 +117,5 @@ block main
       label(for="country") Country
       input#country(type="text", name="country")
       
-    a(href="#", title="Išsaugoti pakeitimus").button Save
+    a(href="#", title="Save changes").button Save
+    a(href="#", title="Next: Household").button Next: Household

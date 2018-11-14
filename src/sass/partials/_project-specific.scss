@@ -60,9 +60,9 @@
     }
 }
 
-#survey section article:last-child {
-    border-bottom: none;
-}
+// #survey section article:last-child {
+//     border-bottom: none;
+// }
 
 .results {
     position: relative;
@@ -93,9 +93,49 @@
     opacity: 0.5;
 }
 
+.surveytime {
+
+}
+
 // Profile page navigation
 #profile-nav {
     background: gray;
+}
+
+ul#profile-sections {
+    position: relative;
+    padding-left: 40px;
+
+    li {
+        display: inline-block;
+        padding: 0 50px 0 0;
+
+        &::after{
+            content: "->";
+            position: relative;
+            top: -34px;
+            right: 37px;
+            height: 10px;
+            width: 10px;
+            font-size: 2em;
+        }
+
+        span {
+            display: block;
+            position: relative;
+        }
+
+    }
+
+    // &::after{
+    //     content: " ";
+    //     position: absolute;
+    //     top: 30px;
+    //     left: 0;
+    //     height: 10px;
+    //     width: 100%;
+    //     background: green;
+    // }
 }
 
 #surveys, #quick-surveys, #lottery, #friends, #profile {
