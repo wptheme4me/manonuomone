@@ -25,11 +25,14 @@ metalsmith(__dirname)
   .clean(true)
   .use(markdown())
   .use(collections({  // Used for navigation purposes
-    default: {
-      pattern: 'default/**/*.md',
+    test: {
+      pattern: 'test/**/*.html',
       refer: false, // skip adding the "next" and "previous" links to your articles
-      // sortBy: 'title',
-      // reverse: true
+      sortBy: 'eile',
+    },
+    profile: {
+      refer: false, // skip adding the "next" and "previous" links to your articles
+      sortBy: 'eile',
     }
   }))
   .use(layouts({

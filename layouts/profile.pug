@@ -29,7 +29,7 @@ block main
       legend Mother tongue
       
       input#lietuviu(type="radio", name="kalba" value="lietuvių" checked)
-      label(for="lietuviu") Lithuanina
+      label(for="lietuviu") Lithuanian
         
       input#rusu(type="radio", name="kalba" value="rusų" checked)
       label(for="rusu") Russian
@@ -93,7 +93,7 @@ block main
             option(value=n) #{n++}
     
     fieldset
-      legend Address
+      legend Address 
 
       label(for="gatve") Street
       input#gatve(type="text", name="gatve")
@@ -103,5 +103,8 @@ block main
       
       label(for="miestas") City
       input#miestas(type="text", name="miestas")
+      
+      label(for="country") Country
+      input#country(type="text", name="country")
       
     a(href="#", title="Išsaugoti pakeitimus").button Save

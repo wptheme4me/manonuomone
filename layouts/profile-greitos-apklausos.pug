@@ -18,23 +18,25 @@ block main
       article
        .r 
         .c8
-         img(src="https://via.placeholder.com/150x150", alt="Image")
+         img(src="https://via.placeholder.com/150x150?text=Photo+A", alt="Image")
          span VS
-         img(src="https://via.placeholder.com/150x150", alt="Image")
-         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+         img(src="https://via.placeholder.com/150x150?text=Photo+B", alt="Image")
+         p Lorem Ipsum is simply dummy text of the printing and typesetting industry?
          a(href="#", title="title").button See results
         .c2.text-right
-         p <span class="points">14#{i++}</span> points for this survey
+         p <span class="points">+#{i++}</span> points for this survey
          
-    section
-     h2 Your past surveys! 
-     -var i=1;
-     while i < 3
-      article
-       .r 
-        .c8
-         img(src="https://via.placeholder.com/150x150", alt="Image")
-         img.inactive(src="https://via.placeholder.com/150x150", alt="Image")
-         p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        .c2
-         p Your earned <br> <span class="points">13#{i++}</span>
+   .r
+    .c0 
+     section
+      h1 Your past surveys! 
+      -var i=1;
+      while i < 3
+       article
+        .r 
+         .c8
+          img(src="https://via.placeholder.com/150x150?text=Photo", alt="Image")
+          img.inactive(src="https://via.placeholder.com/150x150?text=Your+selection", alt="Image")
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry?
+         .c2
+          p Points your earned <br> <span class="points">3#{i++}</span>
