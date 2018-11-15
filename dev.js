@@ -22,7 +22,8 @@ metalsmith(__dirname)
     siteurl: config.dev_siteurl,
     style_sheet: config.style_sheet,
     googleanalytics: config.google_analytics_key,
-    facebook_appid: config.facebook_appid
+    facebook_appid: config.facebook_appid,
+    siteurl_fb_img: config.prod_siteurl_fb_img
   })
   .source('src')
   .destination('build')
