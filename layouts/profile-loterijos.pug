@@ -9,6 +9,28 @@ block main
   .c25
    include ./partials/profile-left-menu.pug
   
-  .c7
-   h1 Lottery
-   p Explain user when lotteries will take place, cause it is not understandable how and when.
+  #lotterypage.c7
+   section
+    h1 Lotteries
+    span You participate in:
+    -var i=1;
+     while i < 3
+      article
+       .r 
+        .c30
+         img(src="https://via.placeholder.com/150x150?text=Lottery+image", alt="Lottery image")
+        .c5
+         h2 Lottery name
+         p Lottery will be held in: 2018-12-12
+         p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        .c2.text-right
+         p <span class="points">#{i++}</span> your tickets are in this lottery.
+   
+   .r
+    .c0
+     section
+      h2 Lottery winners
+      p <span class="winnerdate">2018-12-12</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      p <span class="winnerdate">2018-12-12</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      p <span class="winnerdate">2018-12-12</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      p <span class="winnerdate">2018-12-12</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.

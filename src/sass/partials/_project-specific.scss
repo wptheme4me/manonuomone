@@ -45,7 +45,7 @@
 }
 
 // Surveys and quick surveys
-#survey {
+#surveypage, #lotterypage {
 
     .r {
         width: 100%;
@@ -93,8 +93,14 @@
     opacity: 0.5;
 }
 
-.surveytime {
+// .surveytime {
 
+// }
+
+.winnerdate {
+    display: inline-block;
+    padding-right: 40px;
+    font-weight: 700; 
 }
 
 // Profile page navigation

@@ -31,12 +31,6 @@ metalsmith(__dirname)
   .use(markdown())
   .use(clear_collections(["test", "profile"])) //metalsmith-collection dublication bug workaround
   .use(collections({  // Used for navigation purposes
-    // default: {
-    //   pattern: '**/*.html',
-    //   refer: false, // skip adding the "next" and "previous" links to your articles
-    //   // sortBy: 'title',
-    //   // reverse: true
-    // },
     test: {
       pattern: 'test/**/*.html',
       refer: false, // skip adding the "next" and "previous" links to your articles
@@ -70,23 +64,6 @@ metalsmith(__dirname)
     // browser: ["chrome", "iexplore", "firefox"]
     files: ['src/**/*.scss', 'src/**/*.md', 'layouts/**/*.pug']
   }))
-  // .use(uglify())
-  // .use(htmlMinifier({
-  //   minifierOptions: {
-  //     removeComments: true,
-  //     removeAttributeQuotes: false
-  //   }
-  // }))
-  // .use(sitemap({ // https://www.npmjs.com/package/metalsmith-sitemap
-  //   hostname: config.dev_siteurl,
-  //   lastmod: Date()
-  // }))
-  // .use(robots({ // https://www.npmjs.com/package/metalsmith-robots
-  //   useragent: '*',
-  //   allow: '/',
-  //   disallow: ['404.html'],
-  //   sitemap: config.dev_siteurl + '/sitemap.xml'
-  // }))
   .use(ignore(['test/**/*.html']))
   .build(function (err) {
     if (err) throw err
