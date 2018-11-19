@@ -1,4 +1,4 @@
 ---
-title: 'Gifts, prices'
+title: 'Gifts, prizes'
 layout: gifts.pug
 ---
