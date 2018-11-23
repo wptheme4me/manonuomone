@@ -13,15 +13,43 @@ block main
    section
     span Number in brackers indicates how many surveys are available for the user
     h1 Surveys (6)
+    //- Need to finish
     -var i=1;
-    while i < 7
-     article
+    while i < 2
+     article.notfinished
       .r
-       .c7
-        h2 Survey name #{i}
+       .c6
+        h2 Survey name
         p.surveytime Takes 5min. to complete
-        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-       .c30.text-right 
+        //- p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+       .c4.text-right 
         span.points 14#{i++}
         p points for this survey
-        a(href="#", title="title").button Take survey
+        a(href="#", title="title").button Resume the survey
+
+    //- Active surveys 
+    -var i=1;
+    while i < 4
+     article
+      .r
+       .c6
+        h2 Survey name #{i}
+        p.surveytime Takes 5min. to complete
+        //- p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+       .c4.text-right 
+        span.points 14#{i++}
+        p points for this survey
+        a(href="#", title="title").button Take the survey
+
+    //- Completed surveys 
+    -var i=1;
+    while i < 3
+     article.completed
+      .r
+       .c6
+        h2 Survey name #{i}
+        p.surveytime Takes 5min. to complete
+        //- p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+       .c4.text-right 
+        span.points 14#{i++}
+        p points you got

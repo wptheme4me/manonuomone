@@ -4,5 +4,19 @@ block main
  section
   .r
    .c0#questions
-    != contents
+    -var i=1;
+    while i < 5
+     .r
+      .c4
+       h1 Section name #{i++}
+      .c6
+       dl
+        -var j=1;
+        while j < 4
+         dt.hide #{j++} Question might be a very long one?
+         dd Answer text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+   //-  != contents
+
+ script(src=siteurl + "js/toggle-questions.js")
+
  
