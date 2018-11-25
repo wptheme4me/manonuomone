@@ -10,7 +10,7 @@
         padding: 10px 0px;  
     }
 
-    .center-small {
+    .center-small, .text-right {
         position: relative;
         display: block;
         margin-left: auto;
@@ -33,6 +33,22 @@
    select {
        width: 100%;
    }
+
+   .button {
+    width: 90%;
+    margin: 10px 0;
+   }
+
+   label {
+    
+        select {
+		    margin: 0;
+        }
+
+	    #gim-year, #gim-month, #gim-day {
+		    margin: 0;
+	    }
+    }
 
    // Support questions-answers page 
 #questions {

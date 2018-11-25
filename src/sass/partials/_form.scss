@@ -7,6 +7,24 @@ form {
 	display: block;
 	position: relative;
 	width: 100%;
+
+	.r {
+		width: 100%;
+	}
+}
+
+
+label {
+	color: $title-color;
+	font-weight: 400;
+
+	select {
+		margin: 0 0 0 10px;
+	}
+
+	#gim-year, #gim-month, #gim-day {
+		margin: 0 40px 0 10px;
+	}
 }
 
 input {
@@ -15,18 +33,7 @@ input {
     border:1px solid gray;
 	height: 2rem;
 	width: 100%;
-	margin-bottom: 20px;
-
-	&.redline {
-		border: 1px solid red;
-		background-color: rgba(255, 0, 0, 0.24);
-	}
-	
-	&.greenline {
-		border: 1px solid green;
-		background-color: rgba(0, 128, 0, 0.137);
-	}
-	
+	margin-bottom: 20px;	
 }
 
 select {
@@ -34,7 +41,7 @@ select {
     box-sizing: border-box;
     border:1px solid gray;
 	height: 2rem;
-	width: 25%;
+	// width: 25%;
 	margin: 0 20px 20px 0;	
 }
 
@@ -53,22 +60,14 @@ input[type='radio'] + label {
 }
 
 input[type='submit'] {
-	// background-color: #ce013a;
+
 	background-color: #C5D671;
 	border: none;
 	color: white;
 	text-align: center;
-	// padding: 20px 20px 20px 20px;
 	font-size: 1.25rem;
 	height: 60px;
 }
-
-button {
-	height: 50px;
-	width: 200px;
-	margin: 0 20px 0 0;
-}
-
 
 fieldset {
 	display: block;
@@ -83,45 +82,17 @@ legend {
 	color: $title-color;
 }
 
-label {
-	color: $title-color;
-	font-weight: 400;
+textarea {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.button {
+	height: 50px;
+	width: 200px;
+	margin: 0 20px 0 0;
 }
 
 .notshow {
 	display: none;
-}
-
-input:focus:invalid {
-	background: #fff url('../img/ne.png') no-repeat 99% center;
-	/* background: #fff url(images/invalid.png) no-repeat 98% center; */
-	box-shadow: 0 0 5px #d45252;
-	border-color: #b03535;
-}
-
-input:required:valid { /* when a field is considered valid by the browser */
-	background: rgba(40, 147, 31, 0.129) url('../img/taip.png') no-repeat 99% center;
-	border-color: #28921f;
-}
-
-/* naudoti id:before { content: 'Įvestkite tą ir aną'} tooltips parodyti */
-.tooltip {
-	display: none;
-	position: relative;
-}
-
-input:focus + .tooltip {
-	background: #d88e00;
-	color: white;
-	top: -20px;
-	left: 0px;
-	content: ' ';
-	display: block;
-	position: relative;
-	padding: 4px 8px;
-}
-
-textarea {
-	box-sizing: border-box;
-	width: 100%;
 }

@@ -1,9 +1,8 @@
 //Alignment
 $position: relative;
 
-.right {
-    float: right;
-}
+//Padding
+$padding: 40px;
 
 .center {
     display: block;
@@ -18,25 +17,12 @@ $position: relative;
     transform: translate(-50%, -50%);
 }
 
-//Padding
-$padding: 40px;
-
-.p {
-    padding: 0 $padding $padding 0;
+.right {
+    float: right;
 }
-
-.pt {
-    padding-top: $padding; 
-    padding-bottom: $padding;
-}
-
-.p-r { padding-left: 15%; }
-.pr { padding-left: 7%; }
-.p-l { padding: 0 10% 0 40px; }
 
 .text-right {
     text-align: right;
-    padding-right: $padding;
 }
 
 .text-left {

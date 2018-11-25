@@ -15,18 +15,18 @@ block main
 
     p Explain why user has to fill this.
 
-    ul#profile-sections
-     li About you 0/5 <span class="getpoints">+5 points</span> 
-     li Household 0/7 <span class="getpoints">+5 points</span> 
-     li Health 0/7 <span class="getpoints">+5 points</span> 
-     li Job 0/7 <span class="getpoints">+5 points</span> 
-     li Leisure 0/7 <span class="getpoints">+5 points</span> 
-     li Vehicle 0/7 <span class="getpoints">+5 points</span> 
-     li Technologies 0/7 <span class="getpoints">+5 points</span> 
-    p Fill all information and get points for that.
 
-    h2 About you section
     form(action="#")
+
+     .r
+      .c5
+       h2.text-left Section 'About you' (0/5)
+      .c5.text-right
+        label(for="profilesections") Profile sections
+          select#profilesections
+            each i, variable in ["About you 0/5", "Household 0/7", "Health 0/7", "Job 0/7", "Leisure 0/7", "Vehicle 0/7", "Technologies 0/7"] 
+              option(value=variable) #{i} (+5 points)
+
      fieldset
       legend Your gender
       
@@ -85,20 +85,20 @@ block main
       legend Date of birth
 
       label(for="gim-year") Year
-      select#gim-year
+       select#gim-year
         -var n = 1940;
         while n < 2006
             option(value=n) #{n++}
 
       label(for="gim-month") Month
-      select#gim-month
+       select#gim-month
         //- ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"] 
         //- ["Sausis", "Vasaris", "Kovas", "Balandis", "Gegužė", "Birželis", "Liepa", "Rugpjūtis", "Rugsėjis", "Lapkritis", "Gruodis"]
         each i, variable in ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"] 
             option(value=variable) #{i}
 
       label(for="gim-day") Day
-      select#gim-day
+       select#gim-day
         -var n = 1;
         while n < 32
             option(value=n) #{n++}
