@@ -1,10 +1,10 @@
 ---
-title: 'Third message: get rewards'
+title: 'GIFTS'
 layout: home.pug
 img: 'https://via.placeholder.com/350x350.png?text=Iliustration'
 collection: test
 eile: 3
 ---
-Get rewards text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
+By clicking on the link below, you can check our gift varieties that you can exchange your
+points with after participating in the survey.
 <a href="gifts.html" class="button">See our gifts, prizes</a>
