@@ -1,23 +1,20 @@
 extends ./default.pug
 
 block main
- .r
-  .c0
-   each page, i in collections.test
-    article
-     .r
-      if (i % 2 == 0)
-       .c5
-        img.img(src=siteurl + 'img/' + page.img, alt=page.title)
-       .c5
-        h1 #{page.title}
-        != page.contents 
-      else
-        .c5
+ each page, i in collections.test
+  .r
+   .c0
+     article.va
+       if (i % 2 == 0)
+        img.va-img(src=siteurl + 'img/' + page.img, alt=page.title)
+        .va-text
+         h1 #{page.title}
+         != page.contents 
+       else  
+        .va-text
          h1 #{page.title}
          != page.contents
-        .c5
-         img.img(src=siteurl + 'img/' + page.img, alt=page.title)
+        img.va-img(src=siteurl + 'img/' + page.img, alt=page.title)
          
  include ./partials/partners.pug
  

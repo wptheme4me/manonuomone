@@ -270,3 +270,43 @@ ul#profile-sections {
     }
 
 }
+
+.va > * {
+    vertical-align: middle;
+}
+
+.va-img {
+    display: inline-block;
+    width: 50%;
+    // border: 1px solid red;
+}
+
+.va-text {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 49%;
+    // border: 1px solid blue;
+}
+
+header nav a {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px
+}
+
+header {
+    border-bottom: 1px solid rgba(243, 243, 243, 0.5);
+}
+
+header a.button {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    width: 150px;
+}
+
+.action {
+    background: rgb(133, 224, 47);
+    color: white;
+    border: none;
+}

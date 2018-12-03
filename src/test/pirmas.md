@@ -1,5 +1,5 @@
 ---
-title: 'TAKE SURVEYS, EARN REWARDS'
+title: 'Take surveys, earn rewards'
 layout: home.pug
 img: 'survey.png'
 collection: test
@@ -9,4 +9,4 @@ By participating in surveys, you earn points that can be exchanged for different
 donate the money to charity. And a chance to win the lottery. Most often you can choose your first gift
 after only taking part in 2-4 questionnaires.
 
-<a href="sign-up.html" class="button">Become our member</a>
+<a href="sign-up.html" class="button action">Become our member</a>

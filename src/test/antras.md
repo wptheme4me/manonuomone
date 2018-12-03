@@ -1,5 +1,5 @@
 ---
-title: 'HOW TO EARN'
+title: 'How to earn'
 layout: home.pug
 img: 'steps.png'
 collection: test
