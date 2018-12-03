@@ -1,7 +1,7 @@
 ---
 title: 'GIFTS'
 layout: home.pug
-img: 'https://via.placeholder.com/350x350.png?text=Iliustration'
+img: 'prizes.png'
 collection: test
 eile: 3
 ---

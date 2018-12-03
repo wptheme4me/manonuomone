@@ -3,13 +3,21 @@ extends ./default.pug
 block main
  .r
   .c0
-   each page in collections.test
+   each page, i in collections.test
     article
      .r
-      .c5
-       img(src=page.img, alt=page.title)
-      .c5
-       h1 #{page.title}
-       != page.contents 
+      if (i % 2 == 0)
+       .c5
+        img.img(src=siteurl + 'img/' + page.img, alt=page.title)
+       .c5
+        h1 #{page.title}
+        != page.contents 
+      else
+        .c5
+         h1 #{page.title}
+         != page.contents
+        .c5
+         img.img(src=siteurl + 'img/' + page.img, alt=page.title)
+         
  include ./partials/partners.pug
  

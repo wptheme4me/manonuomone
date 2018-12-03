@@ -1,7 +1,7 @@
 ---
 title: 'TAKE SURVEYS, EARN REWARDS'
 layout: home.pug
-img: 'https://via.placeholder.com/350x350.png?text=Iliustration'
+img: 'survey.png'
 collection: test
 eile: 1
 ---

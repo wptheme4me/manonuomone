@@ -1,7 +1,7 @@
 ---
 title: 'HOW TO EARN'
 layout: home.pug
-img: 'https://via.placeholder.com/350x350.png?text=Iliustration'
+img: 'steps.png'
 collection: test
 eile: 2
 ---
