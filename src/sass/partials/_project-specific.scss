@@ -315,3 +315,25 @@ figure {
     margin: 0;
     padding: 0;
 }
+
+footer {
+    position: relative;
+    // border-top: 1px solid rgba(240, 240, 240, 0.5);
+    background: rgb(248, 248, 248);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(248, 248, 248) 40%, rgb(230, 230, 230) 100%);
+
+    // &::after {
+    //     position: absolute;
+    //     display: block;
+    //     height: 750px;
+    //     width: 100%;
+    //     top: -100px; left: 0px;
+    //     content: "";
+    //     // border: 1px solid red;
+    //     background-color: transparent;
+    //     background-repeat: no-repeat;
+    //     background-image: url('../img/fonas.png');
+    //     background-position: top right 50px;
+    //     z-index: -1;
+    // }
+}
