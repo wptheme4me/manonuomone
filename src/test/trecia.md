@@ -7,6 +7,4 @@ eile: 3
 ---
 By clicking on the link below, you can check our gift varieties that you can exchange your
 points with after participating in the survey.
-<p>
-<a href="gifts.html" class="button action">See our gifts, prizes</a>
-</p>
+<figure><a href="gifts.html" class="button action">See our gifts, prizes</a></figure>
