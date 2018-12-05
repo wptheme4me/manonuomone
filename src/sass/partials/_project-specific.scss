@@ -336,4 +336,16 @@ footer {
     //     background-position: top right 50px;
     //     z-index: -1;
     // }
+
+    .c5 {
+        &::after {
+            content: "";
+            position: absolute;
+            top: -26px; left: 0;
+            height: 1px;
+            width: 80%;
+            margin-right: 40px;
+            background: rgb(219, 219, 219);
+        }
+    }
 }
