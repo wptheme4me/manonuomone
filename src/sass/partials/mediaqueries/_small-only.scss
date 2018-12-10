@@ -26,6 +26,14 @@
         float: none;
     }
 
+    .show-mobile {
+        display: block;
+    }
+    
+    .hide-mobile {
+        display: none;
+    }
+
     header nav a {
         display: block;
         margin-left: 0px;

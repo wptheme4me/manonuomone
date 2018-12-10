@@ -282,13 +282,10 @@ ul#profile-sections {
 
 }
 
-.va > * {
-    vertical-align: middle;
-}
-
 .va-img {
     display: inline-block;
     width: 50%;
+    vertical-align: middle;
     // border: 1px solid red;
 }
 
@@ -297,15 +294,16 @@ ul#profile-sections {
     box-sizing: border-box;
     padding: 40px;
     width: 49%;
+    vertical-align: middle;
     // border: 1px solid blue;
 }
 
-.mobile-first {
-    float: left;
+.show-mobile {
+    display: none;
 }
 
-.mobile-right {
-    float: right;
+.hide-mobile {
+    display: block;
 }
 
 header nav a {

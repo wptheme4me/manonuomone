@@ -4,17 +4,24 @@ block main
  each page, i in collections.test
   .r
    .c0
-     article.va
+     article
        if (i % 2 == 0)
         img.va-img(src=siteurl + 'img/' + page.img, alt=page.title)
         .va-text
          h1 #{page.title}
          != page.contents 
-       else  
-        img.va-img.right(src=siteurl + 'img/' + page.img, alt=page.title)
-        .va-text
-         h1 #{page.title}
-         != page.contents
+       else
+        .show-mobile
+         img.va-img(src=siteurl + 'img/' + page.img, alt=page.title)  
+         .va-text
+          h1 #{page.title}
+          != page.contents
+        .hide-mobile
+         .va-text
+          h1 #{page.title}
+          != page.contents
+         img.va-img(src=siteurl + 'img/' + page.img, alt=page.title)
+        
         
 
  include ./partials/partners.pug
