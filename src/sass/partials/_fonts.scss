@@ -9,7 +9,7 @@ h4, .h4 {
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 1rem;
-  line-height: 1.4;
+  line-height: 1.1;
   color: $title-color;
 }
 
@@ -42,7 +42,7 @@ $headers-medium-up: (
 );
 
 $headers-large: (
-  h1: 3rem 3rem,
+  h1: 2.8rem 3rem,
   h2: 1.8rem 3rem,
   h3: 1.6rem 3rem,
   h4: 18 3rem,
@@ -51,7 +51,7 @@ $headers-large: (
 );
 
 $headers-large-up: (
-  h1: 3.5rem 1rem,
+  h1: 2.8rem 1rem,
   h2: 1.2rem 1rem,
   h3: 3rem 1rem,
   h4: 18 1rem,
