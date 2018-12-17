@@ -1,7 +1,7 @@
 ---
 title: 'How to earn'
 layout: home.pug
-img: 'steps.png'
+img: 'steps0.png'
 collection: test
 eile: 2
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Take surveys, earn rewards'
 layout: home.pug
-img: 'survey.png'
+img: 'survey0.png'
 collection: test
 eile: 1
 ---

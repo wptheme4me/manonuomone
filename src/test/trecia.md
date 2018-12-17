@@ -1,7 +1,7 @@
 ---
 title: 'Gifts'
 layout: home.pug
-img: 'prizes.png'
+img: 'prizes0.png'
 collection: test
 eile: 3
 ---
